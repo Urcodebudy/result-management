@@ -1,0 +1,49 @@
+>>Create folder  'result-manager'
+
+>>Inside 'result-manager', create folder 'back-end'
+
+>>Initialize npm:
+>>.../result-manager
+>>npm init --y
+
+>>Install packages:
+>>.../result-manager
+>>npm i express dotenv mongoose 
+
+>>Create file 'app.js' and 'server.js' inside :
+>>.../result-manager/back-end
+
+>>Inside .../result-manager/back-end, create folder: 'config'
+>>inside .../result-manager/back-end/config, create file 'config.env'
+
+>>export app from app.js
+
+>>in  .../back-end/server.js 
+>>import app 
+>>listen app 
+>>set config file
+
+>>Edit script in package.json to run app smoothly:
+>>inside ../result-manager/package.json
+>> In "scripts" : {} object,
+ write :
+...
+     "start": "nodemon backend/server.js",
+    "dev": "SET NODE_ENV=DEVELOPMENT& nodemon backend/server",
+    "prod": "SET NODE_ENV=PRODUCTION& nodemon backend/server",
+...
+
+start:    to start the app => npm run start
+dev:      to start the app in development mode => npm run dev
+prod     to start the app in priduction mode  => npm run prod
+
+
+#Creating first route for testing
+
+>>Inside ../back-end/
+>>create two folders: 'routes' and 'controllers'
+
+##Create models for different db: subject, result, user
+>>Inside ../back-end/
+>>Create folder model.
+>>Create three models(Mentioned above)
