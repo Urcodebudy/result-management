@@ -38,7 +38,7 @@ node run start
 >Server started on localhost:3000 in DEVELOPMENT mode.
 >Connected to DB with host:localhost
 
-##Note: After reading the code you can see there is a testing route on localhost:3000/api/v1/test/ in result-management/back-end/routes/student you can check it by typing the url in url tab:
+##Note: After reading the code you can see there is a testing route on localhost:3000/api/v1/test/ in result-management/back-end/routes/student you can check it as follow:
 - Now open browser and type following url in URL tab
 ```sh
 localhost:3000/api/v1/test/
