@@ -1,0 +1,269 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+form .txt-field{
+    position: relative;
+    border-bottom:2px solid #142850;
+    margin:30px 0px;
+}
+input[type="submit"]{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    font-size: large;
+    background-color: #142850;
+   border-radius: 10px;
+   color: white;
+
+}
+input[type="submit"]:hover{
+    cursor: pointer;
+    
+    background-color: white;
+    color: red;
+}
+.pass{
+    margin:-5px 0 20px 5px;
+    color: #142850;
+    cursor: pointer;
+}
+.pass:hover{
+    text-decoration: underline;
+}
+.txt-field input{
+    width: 100%;
+    padding:0px 5px;
+    height:40px;
+    font-size: 16px;
+    border:none;
+    background:none;
+    outline:none;
+}
+.txt-field input:focus~label,
+.txt-field input:valid~label{
+    top: -5px;
+    color: white;
+}
+.txt-field label{
+    position:absolute;
+    top:50%;
+    left:5px;
+    color:#142850;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.txt-field span::before{
+    content: '';
+    position:absolute;
+    top:40px;
+    left:0px;
+    width:0%;
+    height:2px;
+    background:#142850;
+    transition: 0.5s;
+}
+.txt-field input:focus~span::before,
+.txt-field input:valid~span::before{
+width: 100%;
+}
+.login-area{
+    position: absolute;
+    top:60%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:400px;
+    height: 320px;
+    border-radius: 10px;
+    background-color: #AEDEFC;
+}
+.login-area h1{
+    text-align:center;
+    padding:0px 0px 20px 0px;
+    border-bottom: 1px solid #142850;
+}
+.login-area form{
+    padding:0px 40px;
+    box-sizing:border-box;
+
+}
+.logo-image{
+    padding-left: 10px;
+    padding-top: 20px;
+    height:80px;
+    width: 100px;
+   }
+.menu{
+    font-size: larger;
+    color: white;
+    margin-left:50px;
+    border-radius: 10px;
+    text-align: center;
+    width:150px;
+   }
+.menu-navbar{
+    background-color: #142850;
+    padding:1%;
+}
+.navbar-bottom{
+    position:absolute;
+    bottom: 1px;
+    width: 100%;
+    height: 50px;
+    text-align:center;
+    background-color: #AEDEFC;
+}
+.navbar-bottom p{
+    padding: 10px;
+}
+p.title1{
+    text-align: center;
+    margin-top: 10px auto 10px auto;
+     display: inline;
+     position: absolute;
+     top:5%;
+     left:42%;
+     margin-bottom: 20px;
+     padding:10px;
+     
+ }
+td:hover{
+     color: red;
+     background-color:white;
+ }
+ .title{
+    background-color: #AEDEFC;
+ }
+.title1{
+   text-align: center;
+   margin-top: 10px auto 10px auto;
+    display: inline;
+    position: absolute;
+    top:1%;
+    left:35%;
+    margin-bottom: 20px;
+    }
+/*Admin-CSS */
+.content-admin img {
+    width: 200px;
+    height: 160px;
+    margin-left: 220px;
+    margin-top: 20px;
+    padding: 0px;
+    display: inline;
+    
+}
+.content-admin p{
+    
+    display: inline;
+    text-align: center;
+    padding-top: 10px;
+    position: relative;
+    margin: 15px;
+    margin-top: 20px;
+    bottom: -30px;
+    right: 240px;  
+}
+
+.student-icon{
+    margin: 0px;
+    padding: 0px;
+    display: inline;
+    
+}
+.result-icon{
+    margin: 0px;
+    padding: 0px;
+    display: inline;
+    position: absolute;
+    top: 60px;
+    left:25%;
+}
+.subject-icon{
+    margin: 0px;
+    padding: 0px;
+    display: inline;
+
+}
+input[type="button"]{
+        width: 100%;
+        height: 30px;
+        margin-bottom: 5px;
+        padding: 4px;
+        font-size:medium;
+        background-color: #142850;
+       border-radius: 10px;
+       color: white;
+    
+    }
+input[type="button"]:hover{
+        cursor: pointer;
+        
+        background-color: white;
+        color: red;
+    }
+.navbar-bottom-admin{
+        position:absolute;
+        bottom: 0px;
+        width: 100%;
+        height: 50px;
+        text-align:center;
+        background-color: #AEDEFC;
+      
+    }
+.navbar-bottom-admin p{
+        padding: 10px;
+    }
+.topbar{
+     
+       padding-top: 1%;
+       background-color: #AEDEFC;
+    
+}
+.topbar h1{
+    display: inline;
+    width: 300px;
+    margin-left: 1%;
+}
+.topbar form{
+    display: inline;
+    position: absolute;
+     right: 15px;
+}
+ /* The side navigation menu */
+ .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 180px;
+    background-color:#142850;
+    position: absolute;
+    top: 55px;
+    height: 86%;
+    overflow: auto;
+  }
+  
+  /* Sidebar links */
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+  }
+  
+  /* Active/current link */
+.sidebar a.active {
+    background-color:white;
+    color:red;
+    border-radius: 13%;
+    width: 80%;
+  }
+  
+  /* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+    background-color:white;
+    color:red;
+    border-radius: 13%;
+    width: 80%;
+  }
